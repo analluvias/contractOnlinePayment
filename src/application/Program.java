@@ -40,11 +40,8 @@ public class Program {
 
         System.out.println("Installments: ");
 
-        List<Installment> installments = contract.getInstallments();
-
-        for (Installment installment : installments) {
-            System.out.println(sdf.format(installment.getDueDate()) + " - " +
-                    installment.getAmount());
+        for (Installment installment : contract.getInstallments()) {
+            System.out.println(installment);
         }
 
     }
